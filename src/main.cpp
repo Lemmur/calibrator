@@ -19,8 +19,6 @@ void setup() {
 }
 
 void loop() {
-  board.setPWM(0, 0, SERVOMIN );
-  delay(1000);
-  board.setPWM(0, 0, SERVOMAX );
+  board.setPWM(0, 0, getPulseFromDeg(0));
   delay(1000);
 }
